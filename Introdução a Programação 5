@@ -1,0 +1,49 @@
+def calculadora_infinit():
+  valid = 2
+  while(valid != 0):
+    print("-" * 50)
+    print(" Digite o número para escolher a operação: ")
+    print("1: Soma 2: Subtração 3: Multiplicação 4: Divisão 0: Sair")
+    operacao = input()
+    if(operacao == '0'):
+      print("Programa Interrompido")
+      valid = 0
+
+    elif(operacao == str or operacao > '4'):
+      print("Essa opção não existe, digite um número valido")
+
+    else:
+      if(operacao == '1'):
+        print("Primeiro número: ")
+        num1 = int(input())
+        print("Segundo número: ")
+        num2 = int(input())
+        result = num1 + num2
+        print("Resultado: " , result)
+
+      elif(operacao == '2'):
+        print("Primeiro número: ")
+        num1 = int(input())
+        print("Segundo número: ")
+        num2 = int(input())
+        result = num1 - num2
+        print("Resultado: " , result)
+
+      elif(operacao == '3'):
+        print("Primeiro número: ")
+        num1 = int(input())
+        print("Segundo número: ")
+        num2 = int(input())
+        result = num1 * num2
+        print("Resultado: " , result)
+
+      elif(operacao == '4'):
+        print("Primeiro número: ")
+        num1 = int(input())
+        print("Segundo número: ")
+        num2 = int(input())
+        result = num1 / num2
+        print("Resultado: " , result)
+
+
+calculadora_infinit()
