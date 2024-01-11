@@ -1,0 +1,21 @@
+def aniversario():
+  parada = False
+  while(parada == False):  
+    print("-" * 50)
+    print("Qual o seu nome completo? ")
+    nome = str(input())
+    print("Em que ano você nasceu? ")
+    try:
+      nasceu = int(input())
+      if(nasceu < 1924 or nasceu > 2023):
+        print("Tu não nasceu nesce ano nem ferrando kkkkkkk. Vamos tentar denovo")
+      else:
+        parada = True
+        atual = 2024 - nasceu
+        print("Parabéns " ,nome, "você já tem " , atual , "anos de idade!")
+
+    except:
+        print("Vamos parar com a palhaçada tá, preenche direito dessa vez")
+
+
+aniversario()
