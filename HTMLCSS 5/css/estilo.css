@@ -9,6 +9,7 @@ header {
 
 header img {
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -22,6 +23,7 @@ main {
 }
 main img {
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
